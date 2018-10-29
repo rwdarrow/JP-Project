@@ -10,7 +10,7 @@ package project;
 public class MoviePlayerDriver {
   public static void main(String[] args) {
     MoviePlayer mp = new MoviePlayer("Movie Player", new Screen("Resolution", 0, 0),
-                                           MonitorType.LCD);
+        MonitorType.LCD);
     mp.play();
     mp.next();
     mp.previous();

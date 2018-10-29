@@ -40,11 +40,12 @@ public class Screen implements ScreenSpec {
 
   /**
    * returns formatted string of Screen attributes
+   *
    * @return the screen member fields
    */
   public String toString() {
     return ("Resolution : " + resolution +
-            "\nRefresh Rate : " + refreshRate +
-            "\nResponse Time : " + responseTime);
+        "\nRefresh Rate : " + refreshRate +
+        "\nResponse Time : " + responseTime);
   }
 }

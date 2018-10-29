@@ -13,8 +13,9 @@ public class MoviePlayer extends Product implements MultimediaControl {
 
   /**
    * Constructor of project.MoviePlayer class.
-   * @param name name of the movie player product
-   * @param screenType the type of screen of the player
+   *
+   * @param name        name of the movie player product
+   * @param screenType  the type of screen of the player
    * @param monitorType the type of monitor of the player
    */
   public MoviePlayer(String name, Screen screenType, MonitorType monitorType) {
@@ -26,7 +27,9 @@ public class MoviePlayer extends Product implements MultimediaControl {
   /**
    * Displays messaging indicating device is playing.
    */
-  public void play() { System.out.println("Playing"); }
+  public void play() {
+    System.out.println("Playing");
+  }
 
   /**
    * Displaying message indicating device is stopping.
@@ -51,6 +54,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
 
   /**
    * Returns formatted string displaying details of movie player.
+   *
    * @return String details of movie player
    */
   public String toString() {

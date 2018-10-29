@@ -10,7 +10,7 @@ public class MultiMediaControlDriver {
   public static void main(String[] args) {
     AudioPlayer ap = new AudioPlayer("Audio Player", "Specification");
     MoviePlayer mp = new MoviePlayer("Movie Player", new Screen("Resolution", 0, 0),
-                                           MonitorType.LCD);
+        MonitorType.LCD);
     ap.stop();
     ap.next();
     ap.previous();

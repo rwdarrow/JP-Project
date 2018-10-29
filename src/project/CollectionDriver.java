@@ -16,11 +16,13 @@ public class CollectionDriver {
     products.add(new AudioPlayer("Audio Player 2", "Specification"));
     products.add(new AudioPlayer("Audio Player 1", "Specification"));
     products.add(new MoviePlayer("Movie Player 2", new Screen("Resolution", 0, 0),
-                                       MonitorType.LCD));
+        MonitorType.LCD));
     products.add(new MoviePlayer("Movie Player 2", new Screen("Resolution", 0, 0),
-                                       MonitorType.LCD));
+        MonitorType.LCD));
 
-    Collections.sort(products, (p1, p2) -> { return p1.getName().compareTo(p2.getName()); });
+    Collections.sort(products, (p1, p2) -> {
+      return p1.getName().compareTo(p2.getName());
+    });
 
     print(products);
   }
