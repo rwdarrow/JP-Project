@@ -33,6 +33,7 @@ public abstract class Product implements Item, Comparator<Product> {
 
   /**
    * Compares two products by name
+   *
    * @param p1 name of the first product
    * @param p2 name of the second product
    */

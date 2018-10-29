@@ -13,7 +13,8 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
    * Constructor of project.AudioPlayer class.
-   * @param name name of the audio player product
+   *
+   * @param name               name of the audio player product
    * @param audioSpecification specification of player audio
    */
   public AudioPlayer(String name, String audioSpecification) {
@@ -24,7 +25,9 @@ public class AudioPlayer extends Product implements MultimediaControl {
   /**
    * Displays messaging indicating device is playing.
    */
-  public void play() { System.out.println("Playing"); }
+  public void play() {
+    System.out.println("Playing");
+  }
 
   /**
    * Displaying message indicating device is stopping.
@@ -49,11 +52,12 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
    * Returns formatted string displaying details of audio player.
+   *
    * @return String details of audio player
    */
   public String toString() {
     return (super.toString()
-            + "\nAudio Spec : " + audioSpecification
-            + "\nMedia Type : " + mediaType);
+        + "\nAudio Spec : " + audioSpecification
+        + "\nMedia Type : " + mediaType);
   }
 }
