@@ -6,13 +6,15 @@ package project;
  * Description: Class implementing project.Item interface describing a product.
  **************************************************************************************************/
 
+import java.util.Comparator;
 import java.util.Date;
 
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparator<Product> {
   int serialNumber;
   Date manufacturedOn;
   String name;
-  static Integer currentProductionNumber = 1; // set first number in production to 1
+  String manufacturer = Item.manufacturer;
+  static int currentProductionNumber = 1; // set first number in production to 1
 
   /**
    * Constructor for the project.Product class.
@@ -27,6 +29,15 @@ public abstract class Product implements Item {
     currentProductionNumber++;
 
     manufacturedOn = new Date(); // set the date manufactured to the current date
+  }
+
+  /**
+   * Compares two products by name
+   * @param p1 name of the first product
+   * @param p2 name of the second product
+   */
+  public int compare(Product p1, Product p2) {
+    return p1.getName().compareTo(p2.getName());
   }
 
   /**
@@ -84,9 +95,9 @@ public abstract class Product implements Item {
    * @return String formatted string displaying product details
    */
   public String toString() {
-    return ("Manufacturer    : " + manufacturer
-        + "\nSerial Number   : " + serialNumber
-        + "\nDate            : " + manufacturedOn
-        + "\nName            : " + name);
+    return ("Manufacturer : " + manufacturer
+        + "\nSerial Number : " + serialNumber
+        + "\nDate : " + manufacturedOn
+        + "\nName : " + name);
   }
 }

@@ -3,12 +3,13 @@ package project;
 /**************************************************************************************************
  * Created by: Robert Darrow
  * Date: 9/24/18
- * Description: Enumerated type declaring codes for media types.
+ * Description: Interface which declares methods used by classes that implement it
  **************************************************************************************************/
 
-public enum ItemType {
-  AUDIO,
-  VISUAL,
-  AUDIOMOBILE,
-  VISUALMOBILE
+public interface ScreenSpec {
+  String getResolution();
+
+  int getRefreshRate();
+
+  int getResponseTime();
 }

@@ -9,26 +9,22 @@ package project;
 
 public class AudioPlayer extends Product implements MultimediaControl {
   String audioSpecification;
-  ItemType mediaType;
+  ItemType mediaType = ItemType.AUDIO;
 
   /**
    * Constructor of project.AudioPlayer class.
    * @param name name of the audio player product
    * @param audioSpecification specification of player audio
-   * @param mediaType type of media supported by the audio player
    */
-  public AudioPlayer(String name, String audioSpecification, ItemType mediaType) {
+  public AudioPlayer(String name, String audioSpecification) {
     super(name); // call the constructor of project.Product to set name
     this.audioSpecification = audioSpecification;
-    this.mediaType = mediaType;
   }
 
   /**
    * Displays messaging indicating device is playing.
    */
-  public void play() {
-    System.out.println("Playing");
-  }
+  public void play() { System.out.println("Playing"); }
 
   /**
    * Displaying message indicating device is stopping.
@@ -37,6 +33,9 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Stopping");
   }
 
+  /**
+   * Displays message indicating moving to the previous song.
+   */
   public void previous() {
     System.out.println("Previous");
   }
