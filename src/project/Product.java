@@ -31,8 +31,9 @@ public abstract class Product implements Item, Comparator<Product> {
     manufacturedOn = new Date(); // set the date manufactured to the current date
   }
 
+  @Override
   /**
-   * Compares two products by name
+   * Compares two products by name.
    *
    * @param p1 name of the first product
    * @param p2 name of the second product

@@ -8,6 +8,8 @@ package project;
  **************************************************************************************************/
 
 public class AudioPlayer extends Product implements MultimediaControl {
+  //FindBugs wants Serializable to be implemented. Ignored.
+
   String audioSpecification;
   ItemType mediaType = ItemType.AUDIO;
 

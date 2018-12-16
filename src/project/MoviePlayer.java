@@ -3,7 +3,8 @@ package project;
 /**************************************************************************************************
  * Created by: Robert Darrow
  * Date: 9/24/18
- * Description: Class implementing MultiMedia control and extends product to describe a movie player
+ * Description: Class implementing MultiMedia control and extends product to describe a movie
+ *              player.
  **************************************************************************************************/
 
 
